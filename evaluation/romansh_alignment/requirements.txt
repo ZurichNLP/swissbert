@@ -1,0 +1,7 @@
+transformers==4.27.1
+sentencepiece==0.1.97
+cached-property==1.5.2
+sqlitedict==2.1.0
+numpy==1.24.2
+nltk==3.8.1
+networkx==3.0
