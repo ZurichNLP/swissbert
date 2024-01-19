@@ -4,11 +4,13 @@
 
 SwissBERT is a masked language model for processing Switzerland-related text. It has been trained on more than 21 million Swiss news articles retrieved from [Swissdox@LiRI](https://t.uzh.ch/1hI).
 
-Based on [X-MOD](https://github.com/facebookresearch/fairseq/tree/main/examples/xmod), which has been pre-trained with language adapters in 81 languages.
+The model is based on [X-MOD](https://github.com/facebookresearch/fairseq/tree/main/examples/xmod), which has been pre-trained with language adapters in 81 languages.
 SwissBERT contains adapters for the national languages of Switzerland – German, French, Italian, and Romansh Grischun.
 In addition, it uses a Switzerland-specific subword vocabulary.
 
 The easiest way to use SwissBERT is via the [transformers](https://github.com/huggingface/transformers) library and the Hugging Face model hub: https://huggingface.co/ZurichNLP/swissbert
+
+More information on the model design and evaluation is provided in our paper ["SwissBERT: The Multilingual Language Model for Switzerland"](https://aclanthology.org/2023.swisstext-1.6/) (SwissText 2023).
 
 ## License
 - This code repository: MIT license
@@ -33,13 +35,23 @@ See [evaluation/romansh_alignment/notebook.ipynb](evaluation/romansh_alignment/n
 
 ## Citation
 ```bibtex
-@article{vamvas-etal-2023-swissbert,
-      title={Swiss{BERT}: The Multilingual Language Model for Switzerland}, 
-      author={Jannis Vamvas and Johannes Gra\"en and Rico Sennrich},
-      year={2023},
-      eprint={2303.13310},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2303.13310}
+@inproceedings{vamvas-etal-2023-swissbert,
+    title = "{S}wiss{BERT}: The Multilingual Language Model for {S}witzerland",
+    author = {Vamvas, Jannis  and
+      Gra{\"e}n, Johannes  and
+      Sennrich, Rico},
+    editor = {Ghorbel, Hatem  and
+      Sokhn, Maria  and
+      Cieliebak, Mark  and
+      H{\"u}rlimann, Manuela  and
+      de Salis, Emmanuel  and
+      Guerne, Jonathan},
+    booktitle = "Proceedings of the 8th edition of the Swiss Text Analytics Conference",
+    month = jun,
+    year = "2023",
+    address = "Neuchatel, Switzerland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.swisstext-1.6",
+    pages = "54--69",
 }
 ```
